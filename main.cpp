@@ -268,7 +268,7 @@ int main(){
 	//меню
 	while(true){
 		system("cls");
-		cout << "1 - новый герой";
+		cout << "Ћюбое значение не из списка - выход\n1 - новый герой";
 		cout << "\n2 - отобразить геро€";
 		cout << "\n3 - сохранить геро€";
 		cout << "\n4 - загрузить геро€\n";
@@ -289,9 +289,10 @@ int main(){
 				break;
 			case 3:
 				newHero(third);
+				
 				break;
 			case 4:
-				newHero(fourth);
+				newHero(fourth); 
 				break;
 			}
 		}
@@ -336,6 +337,7 @@ int main(){
 					fourth->fprint("fourth.txt");
 				break;
 			}
+		  cout << "—охранено";
 		}
 		else if(a == 4){
 			switch(b){
@@ -357,6 +359,7 @@ int main(){
 				break;
 			}
 
+			cout << "«агружено";
 		}
 		else{
 			return 0;
